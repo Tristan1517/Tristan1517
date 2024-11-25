@@ -74,6 +74,36 @@ If you need additional help or clarification, feel free to reach out to our ment
 
 ## Start Learning:
 Click [here](#) to begin the course.
+// Example code for a simple quiz functionality
+
+const quizQuestions = [
+  {
+    question: "What is 2 + 2?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: "4"
+  },
+  {
+    question: "What is 5 + 3?",
+    options: ["7", "8", "9", "10"],
+    correctAnswer: "8"
+  }
+];
+
+let score = 0;
+
+function displayQuiz() {
+  quizQuestions.forEach((question, index) => {
+    const userAnswer = prompt(question.question + "\n" + question.options.join("\n"));
+    if (userAnswer === question.correctAnswer) {
+      score++;
+    }
+  });
+
+  alert("You scored " + score + "/" + quizQuestions.length);
+}
+
+displayQuiz();
+
 
 ## How to Contribute
 1. Fork the repository.
