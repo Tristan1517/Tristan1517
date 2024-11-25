@@ -40,9 +40,11 @@ We welcome contributions to this project to help expand the platform's offerings
 
 ## Contact
 For more information or inquiries, please contact us at: mendozatristandayle@gmail.com
+
 education-for-all/
 │
 ├── README.md
+├── LICENSE
 ├── index.html              # Homepage of the platform
 ├── about.html              # Information about the project
 ├── courses/                # Folder containing course materials (could be HTML, Markdown files)
@@ -54,6 +56,7 @@ education-for-all/
 └── css/                    # CSS files for styling
     ├── styles.css
     └── responsive.css
+
 
 # Introduction to Mathematics
 
