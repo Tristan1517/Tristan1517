@@ -41,23 +41,6 @@ We welcome contributions to this project to help expand the platform's offerings
 ## Contact
 For more information or inquiries, please contact us at: mendozatristandayle@gmail.com
 
-education-for-all/
-│
-├── README.md
-├── LICENSE
-├── index.html              # Homepage of the platform
-├── about.html              # Information about the project
-├── courses/                # Folder containing course materials (could be HTML, Markdown files)
-│   ├── math-course.md
-│   ├── coding-course.md
-├── js/                     # JavaScript files for frontend logic
-│   ├── app.js
-│   ├── quiz.js
-└── css/                    # CSS files for styling
-    ├── styles.css
-    └── responsive.css
-
-
 # Introduction to Mathematics
 
 ## Overview
@@ -75,37 +58,6 @@ At the end of the course, students will take a quiz to assess their understandin
 ## Mentorship:
 If you need additional help or clarification, feel free to reach out to our mentors via the mentorship section of this platform.
 
-## Start Learning:
-Click [here](#) to begin the course.
-// Example code for a simple quiz functionality
-
-const quizQuestions = [
-  {
-    question: "What is 2 + 2?",
-    options: ["3", "4", "5", "6"],
-    correctAnswer: "4"
-  },
-  {
-    question: "What is 5 + 3?",
-    options: ["7", "8", "9", "10"],
-    correctAnswer: "8"
-  }
-];
-
-let score = 0;
-
-function displayQuiz() {
-  quizQuestions.forEach((question, index) => {
-    const userAnswer = prompt(question.question + "\n" + question.options.join("\n"));
-    if (userAnswer === question.correctAnswer) {
-      score++;
-    }
-  });
-
-  alert("You scored " + score + "/" + quizQuestions.length);
-}
-
-displayQuiz();
 
 
 ## How to Contribute
