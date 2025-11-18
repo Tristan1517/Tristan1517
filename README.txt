@@ -82,9 +82,11 @@ def open_add_window():
 
         db = connect_db()
         cursor = db.cursor()
+        today = datetime.date.today().strftime("%Y-%m-%d")
         query = "INSERT INTO expenses (category, amount, date_added) VALUES (%s, %s, %s)"
-        cursor.execute(query, (c, a, datetime.date.today()))
+        cursor.execute(query, (c, a,today))
         db.commit()
+        db.close()
 
         messagebox.showinfo("Success", "Expense added!")
         add_win.destroy()
